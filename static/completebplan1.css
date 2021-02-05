@@ -1,0 +1,81 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.6fr 0.8fr 3.6fr;
+  grid-template-rows: 0.8fr 9.6fr 1.6fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Logo Header Header"
+    "Index Border Content"
+    "Footer Footer Footer";
+}
+.Index {
+  display: grid;
+  grid-template-columns: 0.2fr 2.7fr 0.1fr;
+  grid-template-rows: 0.1fr 1.9fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". Index-Content .";
+  grid-area: Index;
+}
+.Index-Content { grid-area: Index-Content; 
+  background-color: orange;
+}
+.Logo { grid-area: Logo; 
+	background-color: yellow;
+	display: block;
+}
+.Header {   
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . ."
+    "Login About Contact Help"
+    ". . . .";
+  grid-area: Header; 
+	background-color: green;
+}
+.Login { grid-area: Login;
+  background-color: lightblue;
+}
+.About { grid-area: About;
+  background-color: lightblue;
+}
+.Contact { grid-area: Contact;
+  background-color: lightblue;
+}
+.Help { grid-area: Help;
+  background-color: lightblue;
+}
+.Footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1.7fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "."
+    "Footer-Content";
+  grid-area: Footer;
+  	background-color: black;
+}
+.Footer-Content { grid-area: Footer-Content; 
+  background-color: indigo;
+}
+.Border { grid-area: Border; 	
+  background-color: blue;
+}
+.Content {
+  display: grid;
+  grid-template-columns: 0.1fr 2fr;
+  grid-template-rows: 0.1fr 2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". ."
+    ". Content-Display";
+  grid-area: Content;
+}
+.Content-Display { grid-area: Content-Display; 
+  background-color: orange;
+}
