@@ -1,0 +1,93 @@
+.grid-container {
+  display: grid;
+  grid-area: grid-container;
+  grid-auto-flow: column;
+  grid-template-columns: 200px auto auto auto;
+  grid-template-rows: 100px 800px 100px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Logo Header Header Header Header"
+    "Index Index Border Content Content"
+    "Footer Footer Footer Footer Footer";
+}
+.Header {
+  grid-area: Header; 
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  justify-content: space-evenly;
+  grid-template-areas:
+    ". . . ."
+    "Login About Contact Help"
+    ". . . .";
+  background-color: green;
+}
+.Logo { 
+  grid-area: Logo; 
+  background-color: yellow;
+  display: inline-grid;
+}
+.Index {
+  display: grid;
+  grid-area: Index;
+  grid-auto-flow: row;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . ."
+    "Index-Content Index-Content Index-Content Index-Content";
+}
+.Index-Content { 
+  grid-area: Index-Content; 
+  background-color: orange;
+}
+.Login { 
+  grid-area: Login;
+  background-color: lightblue;
+  justify-items: center;
+}
+.About { 
+  grid-area: About;
+  background-color: lightblue;
+  justify-items: center;
+}
+.Contact { 
+  grid-area: Contact;
+  background-color: lightblue;
+  justify-items: center;
+}
+.Help { 
+  grid-area: Help;
+  justify-items: center;
+  background-color: lightblue;
+}
+.Content {
+  display: grid;
+  grid-area: Content;
+  background-color: orange;
+  place-self: end;
+}
+.Footer {
+  display: grid;
+  grid-area: Footer;
+  background-color: black;
+  justify-content: stretch;
+  grid-auto-flow: column;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". Footer-Content .";
+}
+.Footer-Content {
+  grid-area: Footer-Content; 
+  background-color: indigo;
+  font color: white;
+}
+.Border { 
+  grid-area: Border; 	
+  background-color: blue;
+}

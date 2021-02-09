@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>COMPLETEBPLAN.COM</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='completebplan1.css') }}">
+
+</head>
+
+<div class="grid-container">
+  <div class="Header">HEADER
+    <div class="Login">LOGIN</div>
+    <div class="About">ABOUT</div>
+    <div class="Contact">CONTACT</div>
+    <div class="Help">HELP</div>
+  </div>
+  <div class="Logo">LOGO</div>
+  <div class="Index">
+    <div class="Index-Content">INDEX
+    <li>SECTION I</li>
+    <li>SECTION II</li>
+    <li>SECTION II</li>
+    <li>SECTION IV</li>
+    <li>SECTION V</li>
+    <li>SECTION VI</li>
+    </div>
+  </div>
+  <div class="Border">BORDER</div>
+  <div class="Content">
+
+	{% block body %}
+
+	{% endblock %}
+	
+  </div>
+  <div class="Footer">
+    <div class="Footer-Content">FOOTER</div>
+  </div>
+</div>
+</html>

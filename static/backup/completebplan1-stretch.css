@@ -1,0 +1,97 @@
+.grid-container {
+  display: grid;
+  align-content: stretch;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Logo Header Header"
+    "Index Border Content"
+    "Footer Footer Footer";
+}
+.Index {
+  align-content: stretch;
+  grid-area: Index;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". Index-Content .";
+}
+.Index-Content { grid-area: Index-Content; 
+  align-content: stretch;
+  background-color: orange;
+}
+.Logo { grid-area: Logo; 
+  	align-content: stretch;
+	background-color: yellow;
+	display: block;
+}
+.Header {   
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . ."
+    "Login About Contact Help"
+    ". . . .";
+  grid-area: Header; 
+  background-color: green;
+  align-content: stretch;
+}
+.Login { grid-area: Login;
+  align-content: stretch;
+  background-color: lightblue;
+}
+.About { grid-area: About;
+  align-content: stretch;
+  background-color: lightblue;
+}
+.Contact { grid-area: Contact;
+  align-content: stretch;
+  background-color: lightblue;
+}
+.Help { grid-area: Help;
+  align-content: stretch;
+  background-color: lightblue;
+}
+.Footer {
+  align-content: stretch;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "."
+    "Footer-Content";
+  grid-area: Footer;
+  	background-color: black;
+}
+.Footer-Content { grid-area: Footer-Content; 
+  align-content: stretch;
+  background-color: indigo;
+}
+.Border { 
+  align-content: stretch;
+  grid-area: Border; 	
+  background-color: blue;
+}
+.Content {
+  display: grid;
+  align-content: stretch;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". ."
+    ". Content-Display";
+  grid-area: Content;
+}
+.Content-Display { 
+  align-content: stretch;
+  grid-area: Content-Display; 
+  background-color: orange;
+}

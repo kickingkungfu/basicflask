@@ -1,0 +1,65 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  justify-items: stretch;
+  grid-template-areas:
+    ". Header Header Header ."
+    ". . welcome . ."
+    ". Footer Footer Footer .";
+}
+.Logo { grid-area: Logo; 
+	background-color: yellow;
+	display: grid;
+}
+.Header {   
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . ."
+    "Login About Contact Help"
+    ". . . .";
+  grid-area: Header; 
+  background-color: green;
+  place-items: stretch;
+}
+.Login { grid-area: Login;
+  background-color: lightblue;
+  display: grid;
+}
+.About { grid-area: About;
+  background-color: lightblue;
+  display: grid;
+}
+.Contact { grid-area: Contact;
+  background-color: lightblue;
+  display: grid;
+}
+.Help { grid-area: Help;
+  background-color: lightblue;
+  display: grid;
+}
+.welcome { grid-area: welcome; 
+  background-color: orange;
+  display: grid;
+}
+.Footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . ."
+    "Footer-Content Footer-Content Footer-Content Footer-Content";
+
+  grid-area: Footer;
+  background-color: black;
+}
+.Footer-Content { 
+  grid-area: Footer-Content; 
+  background-color: indigo;
+  display: grid
+}

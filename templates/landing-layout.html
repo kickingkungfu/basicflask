@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>COMPLETEBPLAN.COM</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='landing.css') }}">
+
+</head>
+
+<div class="grid-container">
+  <div class="Header">HEADER
+    <div class="Login">LOGIN</div>
+    <div class="About">ABOUT</div>
+    <div class="Contact">CONTACT</div>
+    <div class="Help">HELP</div>
+  </div>
+  <div class="content">
+
+	{% block body %}
+
+	{% endblock %}
+	
+  </div>
+  <div class="Footer">
+    <div class="Footer-Content">FOOTER</div>
+  </div>
+</div>
+</html>

@@ -1,0 +1,84 @@
+.grid-container {
+  display: grid;
+  justify-items: stretch;
+  
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 100px 800px 100px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Header Header Header"
+    "Content Content Content"
+    "Footer Footer Footer";
+}
+.Header {   
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  justify-content: space-evenly;
+  grid-template-areas:
+    ". . . ."
+    "Login About Contact Help"
+    ". . . .";
+  grid-area: Header; 
+	background-color: green;
+}
+.Content {
+  display: grid;
+  grid-area: Content;
+  background-color: orange;
+  place-self: center;
+}
+.Footer {
+  display: grid;
+  gap: 0px 0px;
+  grid-area: Footer;
+  background-color: black;
+  justify-content: center;
+    grid-template-areas:
+    ". . ."
+    ". Footer-Content ."
+    ". . .";
+}
+.Index {
+  display: grid;
+  grid-template-columns: 0.2fr 2.7fr 0.1fr;
+  grid-template-rows: 0.1fr 1.9fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". Index-Content .";
+  grid-area: Index;
+}
+.Index-Content { grid-area: Index-Content; 
+  background-color: orange;
+}
+.Logo { grid-area: Logo; 
+	background-color: yellow;
+	display: inline-grid;
+	jusitify-items: center;
+}
+.Login { grid-area: Login;
+  background-color: lightblue;
+  jusitify-items: center;
+}
+.About { grid-area: About;
+  background-color: lightblue;
+	jusitify-items: center;
+}
+.Contact { grid-area: Contact;
+  background-color: lightblue;
+	jusitify-items: center;
+}
+.Help { grid-area: Help;
+  background-color: lightblue;
+	jusitify-items: center;
+}
+.Footer-Content { grid-area: Footer-Content; 
+  background-color: indigo;
+  font color: white;
+}
+.Border { grid-area: Border; 	
+  background-color: blue;
+}
+
